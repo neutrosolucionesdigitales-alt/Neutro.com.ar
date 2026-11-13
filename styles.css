@@ -1,0 +1,196 @@
+/* ==================== ESTILOS PÁGINA SOFTWARE INDIVIDUAL ==================== */
+body.pagina-software {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background-color: #0A0A0A;
+    color: #F0F0F0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Botón Volver al Inicio */
+.btn-volver {
+    display: inline-block;
+    color: #A0A0A0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #141414;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+    color: #FF5500;
+    border-color: #FF5500;
+}
+
+/* Contenedor alineado a la izquierda */
+.contenedor-izquierdo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Tarjeta individual de Software */
+.card-software-individual {
+    background-color: #141414;
+    border: 1px solid #222222;
+    border-left: 4px solid #FF5500;
+    border-radius: 14px;
+    padding: 2.2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.badge-tag {
+    display: inline-block;
+    background: #0F0F0F;
+    color: #FF5500;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #222222;
+    margin-bottom: 1rem;
+}
+
+.card-software-individual h2 {
+    font-size: 1.5rem;
+    color: #F0F0F0;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.desc-software {
+    color: #A0A0A0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.8rem;
+}
+
+.tech-tags span {
+    background-color: #0F0F0F;
+    color: #A0A0A0;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #222222;
+    font-family: monospace;
+}
+
+/* ==================== ESTILOS VISOR INTERACTIVO AGUA OASIS ==================== */
+.oasis-interactive-box {
+    margin-top: 1.5rem;
+    border-top: 1px solid #222222;
+    padding-top: 1.5rem;
+}
+
+.oasis-trigger-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #0F0F0F;
+    border: 1px solid #331f12;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.oasis-trigger-wrapper:hover {
+    border-color: #FF5500;
+    background-color: #1a110a;
+}
+
+/* Logo de Oasis en tamaño mediano */
+.oasis-logo-circle {
+    width: 55px;
+    height: 55px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FF5500;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.oasis-main-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.oasis-trigger-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.oasis-trigger-text i {
+    color: #FF5500;
+    transition: transform 0.3s ease;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
+.oasis-images-gallery {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out, margin-top 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.show-gallery {
+    max-height: 1200px;
+    opacity: 1;
+    margin-top: 1.5rem;
+}
+
+.oasis-mini-item {
+    background-color: #0F0F0F;
+    border: 1px solid #222222;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.oasis-mini-item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-bottom: 1px solid #222222;
+}
+
+.oasis-mini-item p {
+    padding: 0.8rem;
+    font-size: 0.82rem;
+    color: #A0A0A0;
+    line-height: 1.4;
+}
